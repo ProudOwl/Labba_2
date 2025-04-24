@@ -21,7 +21,6 @@ func main() {
 	fmt.Print("Кол-во чисел: ")
 	fmt.Scan(&n)
 
-	// Переменная для хранения индексов
 	var indices string
 
 	for i := 0; i < n; i++ {
@@ -30,14 +29,11 @@ func main() {
 		fmt.Scan(&num)
 		sum, product := sumAndProductOfDigits(num)
 		if sum < product {
-			indices += fmt.Sprintf("%d ", i) // Добавляем индекс в строку
+			indices += fmt.Sprintf("%d ", i)
 		}
 	}
 
-	// Выводим индексы в конце
 	if indices != "" {
 		fmt.Println(indices)
-	} else {
-		fmt.Println("Нет индексов, соответствующих условию.")
 	}
 }
