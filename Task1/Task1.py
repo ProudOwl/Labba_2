@@ -9,7 +9,7 @@ N = 0
 while True:
     try:
         N = int(input("Введите значение N (положительное число): "))
-        if N > 0:
+        if N > 0 and N <= 26:
             break
     except ValueError:
         pass
