@@ -11,7 +11,7 @@ fun printPattern(N: Int) {
 fun main() {
     print("Введите число N (положительное число): ")
     val N = readLine()?.toIntOrNull()
-    if (N != null && N > 0) {
+    if (N != null && N > 0 && N <= 26) {
        printPattern(N)
     } else {
         println("Неверный ввод")
