@@ -14,7 +14,7 @@ void printPattern(int N) {
 int main() {
     int N;
     cout << "Введите значение N (положительное число): ";
-    while (!(cin >> N) || N <= 0) {
+    while (!(cin >> N) || N <= 0 || N > 26) {
         cout << "Введите корректное положительное значение: ";
     }
     printPattern(N);
