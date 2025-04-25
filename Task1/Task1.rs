@@ -16,7 +16,7 @@ fn main() {
     loop {
         io::stdin().read_line(&mut input).expect("Ошибка чтения");
         let n: usize = match input.trim().parse() {
-            Ok(num) if num > 0 => num,
+            Ok(num) if num > 0  && num <= 26 => num,
             _ => {
                 println!("Введите корректное положительное значение: ");
                 input.clear();
