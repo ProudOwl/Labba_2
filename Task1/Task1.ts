@@ -20,7 +20,7 @@ console.log("Введите значение N (положительное чи�
 
 rl.on('line', (input: string) => {
     const N = parseInt(input);
-    if (N > 0) {
+    if (N > 0 && N <= 26) {
         printPattern(N);
         rl.close();
     } else {
