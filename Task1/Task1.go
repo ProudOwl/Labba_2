@@ -19,7 +19,7 @@ func main() {
     fmt.Print("Введите значение N (положительное число): ")
     for {
         _, err := fmt.Scan(&N)
-        if err == nil && N > 0 {
+        if err == nil && N > 0 && N <= 26{
             break
         }
         fmt.Println("Введите корректное положительное значение: ")
