@@ -14,7 +14,7 @@ print("Введите значение N (положительное число)
 var N: Int = 0
 
 while true {
-    if let input = readLine(), let value = Int(input), value > 0 {
+    if let input = readLine(), let value = Int(input), value > 0, value <= 26{
         N = value
         break
     }
