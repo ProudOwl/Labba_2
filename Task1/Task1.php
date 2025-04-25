@@ -12,7 +12,7 @@ function printPattern($N) {
 echo "Введите значение N (положительное число): ";
 while (true) {
     $input = trim(fgets(STDIN));
-    if (is_numeric($input) && $input > 0) {
+    if (is_numeric($input) && $input > 0 && $input <= 26) {
         $N = (int)$input;
         break;
     }
