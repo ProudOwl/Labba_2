@@ -14,7 +14,7 @@ class Program {
     static void Main() {
         int N;
         Console.WriteLine("Введите значение N (положительное число): ");
-        while (!int.TryParse(Console.ReadLine(), out N) || N <= 0) {
+        while (!int.TryParse(Console.ReadLine(), out N) || N <= 0 || N > 26) {
             Console.WriteLine("Введите корректное положительное значение: ");
         }
         PrintPattern(N);
