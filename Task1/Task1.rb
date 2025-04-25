@@ -12,7 +12,7 @@ n = 0
 print "Введите значение N (положительное число): "
 while true
   input = gets.chomp
-  if input =~ /^\d+$/ && (n = input.to_i) > 0
+  if input =~ /^\d+$/ && (n = input.to_i) > 0 && n <= 26
     break
   end
   print "Введите корректное положительное значение: "
